@@ -4,6 +4,7 @@ import 'color_palette.dart';
 
 class ApplicationThemeManager {
   static ThemeData theme = ThemeData(
+    scaffoldBackgroundColor: ColorPalette.backgroundColor,
     colorScheme: ColorScheme(
         brightness: Brightness.dark,
         primary: ColorPalette.mainBlue,
@@ -14,14 +15,5 @@ class ApplicationThemeManager {
         onError: Colors.white,
         surface: ColorPalette.mainBlue,
         onSurface: Colors.white),
-    focusColor: ColorPalette.mainBlue,
-    scaffoldBackgroundColor: ColorPalette.backgroundColor,
-    textButtonTheme: TextButtonThemeData(
-      style: ButtonStyle(
-          shape: WidgetStateProperty.all(
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16))),
-          backgroundColor: WidgetStateProperty.all(ColorPalette.mainBlue),
-          minimumSize: WidgetStateProperty.all(Size(double.infinity, 52))),
-    ),
   );
 }

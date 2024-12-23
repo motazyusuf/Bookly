@@ -1,4 +1,5 @@
 import 'package:bookly_app/core/configurations/pages_routes.dart';
+import 'package:bookly_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
 
@@ -7,7 +8,7 @@ class AppRouter {
     switch (settings.name) {
       case PagesRoutes.onBoardingView:
         return MaterialPageRoute(
-            builder: (context) => Placeholder(), settings: settings);
+            builder: (context) => SplashView(), settings: settings);
 
       default:
         return MaterialPageRoute(builder: (context) => const Placeholder()

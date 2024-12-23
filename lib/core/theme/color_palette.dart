@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ColorPalette {
-  static Color backgroundColor = Colors.white;
+  static Color backgroundColor = const Color(0xFF100B20);
   static Color mainBlue = const Color(0xFF247CFF);
   static Color darkBlue = const Color(0xFF242424);
   static Color darkGrey = const Color(0xFF757575);
