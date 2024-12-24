@@ -6,19 +6,23 @@ class CustomAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Image.asset(
-          "assets/icons/BOOKLY.png",
-          height: 15.h,
-        ),
-        const Spacer(),
-        const ImageIcon(
-          AssetImage("assets/icons/search.png"),
-          size: 30,
-        )
-      ],
+    return Padding(
+      padding:
+          EdgeInsets.only(left: 20.w, right: 20.w, top: 50.h, bottom: 35.h),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(
+            "assets/icons/BOOKLY.png",
+            height: 15.h,
+          ),
+          const Spacer(),
+          const ImageIcon(
+            AssetImage("assets/icons/search.png"),
+            size: 30,
+          )
+        ],
+      ),
     );
   }
 }
