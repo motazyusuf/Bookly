@@ -18,7 +18,7 @@ class BooksList extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 8.w),
           child: BooksListItem(),
         ),
-        itemCount: 100,
+        itemCount: 4,
       )),
     );
   }
