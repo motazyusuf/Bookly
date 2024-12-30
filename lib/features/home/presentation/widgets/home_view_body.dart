@@ -1,3 +1,4 @@
+import 'package:bookly_app/features/home/presentation/widgets/best_seller_section.dart';
 import 'package:bookly_app/features/home/presentation/widgets/books_list.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,12 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [CustomAppbar(), BooksList()],
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        CustomAppbar(),
+        BooksList(),
+        BestSellerSection(),
+      ],
     );
   }
 }

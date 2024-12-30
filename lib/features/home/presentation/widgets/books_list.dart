@@ -10,16 +10,15 @@ class BooksList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(left: 8.w),
-      height: 225,
-      child: Expanded(
-          child: ListView.builder(
+      height: 200,
+      child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => Padding(
           padding: EdgeInsets.symmetric(horizontal: 8.w),
           child: BooksListItem(),
         ),
         itemCount: 4,
-      )),
+      ),
     );
   }
 }
