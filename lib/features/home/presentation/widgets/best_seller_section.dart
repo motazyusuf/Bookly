@@ -1,3 +1,4 @@
+import 'package:bookly_app/features/home/presentation/widgets/best_seller_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,12 +13,15 @@ class BestSellerSection extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(top: 40.h, left: 25.w),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             "Best Seller",
-            style: MyTextStyles.fontInter32MainBlueBold,
+            style: MyTextStyles.fontMontserrat18whiteRegular,
           ),
-          verticalSpace(10),
+          verticalSpace(20),
+          BestSellerList()
+          // Container(color: Colors.red, height: 200,)
         ],
       ),
     );

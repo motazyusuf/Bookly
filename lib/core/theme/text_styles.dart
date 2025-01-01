@@ -4,11 +4,26 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'myFontWeights.dart';
 
 class MyTextStyles {
-  static TextStyle fontInter32MainBlueBold = TextStyle(
+  static TextStyle fontMontserrat18whiteRegular = TextStyle(
       fontFamily: 'Montserrat',
       color: Colors.white,
       fontSize: 18.sp,
       fontWeight: MyFontWeights.regular);
+  static TextStyle fontMontserrat18whiteSemiBold = TextStyle(
+      fontFamily: 'Montserrat',
+      color: Colors.white,
+      fontSize: 18.sp,
+      fontWeight: MyFontWeights.semiBold);
+  static TextStyle fontMontserrat14whiteSemiBold = TextStyle(
+      fontFamily: 'Montserrat',
+      color: Colors.white,
+      fontSize: 14.sp,
+      fontWeight: MyFontWeights.semiBold);
+  static TextStyle fontMontserrat12GreySemiBold = TextStyle(
+      fontFamily: 'Montserrat',
+      color: Color(0xff8D8B95),
+      fontSize: 12.sp,
+      fontWeight: MyFontWeights.semiBold);
 
 // static TextStyle font24BlackBoldest = TextStyle(
 //     color: Colors.black, fontSize: 24.sp, fontWeight: MyFontWeights.boldest);
